@@ -59,7 +59,7 @@ async def get_bio(username, path):
     for _ in range(max_retries):
         try:
             async with aiohttp.ClientSession() as session:
-                proxy = "http://Kzatp7knxYKmnx29Li-res-ANY:6cuTNayd1lz5B28Ij@gw.thunderproxies.net:5959"
+                proxy = "http://gsDIvA0qq3ZaPm67Hm-dc-ANY:IBSnNDz4adZ76Or@gw.thunderproxies.net:5959"
                 url = f"https://t.me/{username}"
                 async with session.get(url, proxy=proxy, timeout=60) as response:
                     if response.status == 200:
